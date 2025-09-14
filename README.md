@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌌 CONSTELLA  
 
-Currently, two official plugins are available:
+> **Forge cosmic connections, share memories, and explore your galaxy of circles.**  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Constella Banner](https://via.placeholder.com/1000x250.png?text=CONSTELLA)  
+*(replace with your app screenshot/banner)*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🪐 **Galaxy Circles** – Create, join, and explore vibrant community spaces.  
+- 🌟 **Avatars** – Choose your **Star** or **Planet** persona and shine your light.  
+- 💬 **Chat System** – Real-time conversations enhanced with animated cosmic vibes.  
+- 🧠 **AI-Powered Vibes** – Sentiment and connection analysis to spark meaningful links.  
+- 📦 **Memory Capsules** – Preserve milestones, moments, and messages forever.  
+- 🎇 **Immersive UI** – Beautiful animated starfield backgrounds, gradients, and cosmic themes.  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ⚛️ [React + Vite](https://vitejs.dev/) – blazing fast frontend framework  
+- 🎨 [TailwindCSS](https://tailwindcss.com/) – modern utility-first styling  
+- 🎭 [Framer Motion](https://www.framer.com/motion/) – smooth animations and transitions  
+- 🔮 [TypeScript](https://www.typescriptlang.org/) – type safety and scalability  
+- 🤖 Custom **Sentiment & Connection Analysis** services  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Screenshots
+
+| Landing Page | Galaxy Lobby | Create Circle |
+|--------------|--------------|---------------|
+| ![](https://via.placeholder.com/300x200.png?text=Landing) | ![](https://via.placeholder.com/300x200.png?text=Lobby) | ![](https://via.placeholder.com/300x200.png?text=Create+Circle) |
+
+*(Replace with actual app screenshots)*
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/YOUR-USERNAME/CONSTELLA.git
+cd CONSTELLA
