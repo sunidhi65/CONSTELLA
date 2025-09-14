@@ -22,7 +22,7 @@
 - 🔮 [TypeScript](https://www.typescriptlang.org/) – type safety and scalability  
 - 🤖 Custom **Sentiment & Connection Analysis** services  
 
-![Landing Page](constella landing page.png)
+
 
 
 
