@@ -3,11 +3,6 @@
 
 > **Forge cosmic connections, share memories, and explore your galaxy of circles.**  
 
-![Constella Banner](https://via.placeholder.com/1000x250.png?text=CONSTELLA)  
-*(replace with your app screenshot/banner)*
-
----
-
 ## ✨ Features
 
 - 🪐 **Galaxy Circles** – Create, join, and explore vibrant community spaces.  
@@ -27,21 +22,6 @@
 - 🔮 [TypeScript](https://www.typescriptlang.org/) – type safety and scalability  
 - 🤖 Custom **Sentiment & Connection Analysis** services  
 
----
 
-## 📸 Screenshots
 
-| Landing Page | Galaxy Lobby | Create Circle |
-|--------------|--------------|---------------|
-| ![](https://via.placeholder.com/300x200.png?text=Landing) | ![](https://via.placeholder.com/300x200.png?text=Lobby) | ![](https://via.placeholder.com/300x200.png?text=Create+Circle) |
 
-*(Replace with actual app screenshots)*
-
----
-
-## 🛠️ Getting Started
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/YOUR-USERNAME/CONSTELLA.git
-cd CONSTELLA
