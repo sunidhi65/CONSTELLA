@@ -23,8 +23,20 @@ export const MOCK_CHATS: Chat[] = [
     type: 'GALAXY_CIRCLE',
     members: ['user_1', 'user_2', 'user_3', 'user_4', 'user_5', 'user_6', 'user_7', 'user_8'],
     messages: [
-      { id: 'msg_1', authorId: 'user_1', text: 'Just saw a documentary about black holes. Mind-blowing stuff.', timestamp: new Date(Date.now() - 1000 * 60 * 2), sentiment: 'NEUTRAL' },
-      { id: 'msg_2', authorId: 'user_2', text: 'Right? The scale of the universe is just incredible.', timestamp: new Date(Date.now() - 1000 * 60 * 1), sentiment: 'POSITIVE' },
+      {
+        id: 'msg_1',
+        authorId: 'user_1',
+        text: 'Just saw a documentary about black holes. Mind-blowing stuff.',
+        timestamp: new Date(Date.now() - 1000 * 60 * 2).toISOString(),
+        sentiment: 'NEUTRAL'
+      },
+      {
+        id: 'msg_2',
+        authorId: 'user_2',
+        text: 'Right? The scale of the universe is just incredible.',
+        timestamp: new Date(Date.now() - 1000 * 60 * 1).toISOString(),
+        sentiment: 'POSITIVE'
+      },
     ],
   },
   {
@@ -37,10 +49,16 @@ export const MOCK_CHATS: Chat[] = [
     type: 'GALAXY_CIRCLE',
     members: Array.from({ length: 12 }, (_, i) => `user_${i + 1}`),
     messages: [
-      { id: 'msg_3', authorId: 'user_3', text: 'A haiku for Saturn:\nRings of ancient dust,\nA silent dance in the void,\nBeauty in the cold.', timestamp: new Date(Date.now() - 1000 * 60 * 5), sentiment: 'POSITIVE' },
+      {
+        id: 'msg_3',
+        authorId: 'user_3',
+        text: 'A haiku for Saturn:\nRings of ancient dust,\nA silent dance in the void,\nBeauty in the cold.',
+        timestamp: new Date(Date.now() - 1000 * 60 * 5).toISOString(),
+        sentiment: 'POSITIVE'
+      },
     ],
   },
-   {
+  {
     id: 'chat_3',
     name: 'Nebula Wanderers',
     description: 'Adventures through the unknown',
@@ -50,7 +68,13 @@ export const MOCK_CHATS: Chat[] = [
     type: 'GALAXY_CIRCLE',
     members: Array.from({ length: 6 }, (_, i) => `user_${i + 1}`),
     messages: [
-      { id: 'msg_4', authorId: 'user_4', text: 'If you could visit any planet, real or fictional, where would you go?', timestamp: new Date(Date.now() - 1000 * 60 * 60 * 1), sentiment: 'NEUTRAL' },
+      {
+        id: 'msg_4',
+        authorId: 'user_4',
+        text: 'If you could visit any planet, real or fictional, where would you go?',
+        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 1).toISOString(),
+        sentiment: 'NEUTRAL'
+      },
     ],
   },
   {
@@ -59,8 +83,20 @@ export const MOCK_CHATS: Chat[] = [
     type: 'NEBULA_LINK',
     members: ['user_7', 'user_1'],
     messages: [
-      { id: 'msg_5', authorId: 'user_7', text: 'Your stories of traveling the star-strewn paths are always so captivating, Orion.', timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2), sentiment: 'POSITIVE' },
-      { id: 'msg_6', authorId: 'user_1', text: 'And your ancient wisdom brings a unique perspective to them, Alex. It\'s a pleasure sharing them with you.', timestamp: new Date(Date.now() - 1000 * 60 * 60 * 1.5), sentiment: 'POSITIVE' },
+      {
+        id: 'msg_5',
+        authorId: 'user_7',
+        text: 'Your stories of traveling the star-strewn paths are always so captivating, Orion.',
+        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(),
+        sentiment: 'POSITIVE'
+      },
+      {
+        id: 'msg_6',
+        authorId: 'user_1',
+        text: "And your ancient wisdom brings a unique perspective to them, Alex. It's a pleasure sharing them with you.",
+        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 1.5).toISOString(),
+        sentiment: 'POSITIVE'
+      },
     ],
     description: 'A private link.',
     tag: 'Private',
@@ -69,58 +105,61 @@ export const MOCK_CHATS: Chat[] = [
   },
 ];
 
-
 export const MOCK_CONNECTIONS: Connection[] = [
-    { user1Id: 'user_5', user2Id: 'user_6', type: 'SOULMATE' },   // Maya -> Jordan
-    { user1Id: 'user_7', user2Id: 'user_1', type: 'FRIEND' }, // Alex -> Orion
-    { user1Id: 'user_6', user2Id: 'user_1', type: 'INTEREST' }, // Jordan -> Orion
-    { user1Id: 'user_7', user2Id: 'system', type: 'FRIEND' }, // Alex -> System
-    { user1Id: 'system', user2Id: 'user_3', type: 'FRIEND' }, // System -> Nova
-    { user1Id: 'user_1', user2Id: 'user_8', type: 'INTEREST' }, // Orion -> Sam
-    { user1Id: 'user_3', user2Id: 'user_2', type: 'FRIEND' }, // Nova -> Luna
+  { user1Id: 'user_5', user2Id: 'user_6', type: 'SOULMATE' },   // Maya -> Jordan
+  { user1Id: 'user_7', user2Id: 'user_1', type: 'FRIEND' },     // Alex -> Orion
+  { user1Id: 'user_6', user2Id: 'user_1', type: 'INTEREST' },   // Jordan -> Orion
+  { user1Id: 'user_7', user2Id: 'system', type: 'FRIEND' },     // Alex -> System
+  { user1Id: 'system', user2Id: 'user_3', type: 'FRIEND' },     // System -> Nova
+  { user1Id: 'user_1', user2Id: 'user_8', type: 'INTEREST' },   // Orion -> Sam
+  { user1Id: 'user_3', user2Id: 'user_2', type: 'FRIEND' },     // Nova -> Luna
 ];
 
 export const MOCK_MEMORIES: Memory[] = [
-    {
-        id: 'mem_1',
-        type: 'milestone',
-        title: 'First Nebula Link with Luna',
-        description: 'The moment when Luna and I discovered our cosmic connection through synchronized star-gazing in the Dreamers Circle. The constellati...',
-        date: new Date('2024-12-15'),
-        context: 'Andromeda',
-        participants: ['user_2', 'user_1'],
-        isPrivate: true,
-    },
-    {
-        id: 'mem_2',
-        type: 'moment',
-        title: 'Cosmic Poetry Night',
-        description: 'An incredible evening in the Starlight Poets circle where everyone shared verses about their favorite constellations. Nova\'s poem abo...',
-        date: new Date('2024-12-10'),
-        context: 'Lyra',
-        participants: ['user_3', 'user_8', 'user_4', 'user_5'],
-        isPrivate: false,
-    },
-    {
-        id: 'mem_3',
-        type: 'message',
-        title: 'The Great Galaxy Alignment',
-        description: 'A beautiful moment when all five of us in the Nebula Wanderers felt the same pull toward exploration at exactly the same time. The...',
-        date: new Date('2024-12-08'),
-        context: 'Sagittarius',
-        participants: ['user_4', 'user_8', 'user_3', 'user_1', 'user_2'],
-        isPrivate: true,
-    },
-    {
-        id: 'mem_4',
-        type: 'milestone',
-        title: 'Stella\'s Breakthrough',
-        description: 'The day Stella opened up about her fears and dreams in our private Nebula Link. It marked the beginning of our deeper connection and...',
-        date: new Date('2024-12-05'),
-        context: 'Virgo',
-        participants: ['user_5', 'user_6'],
-        isPrivate: true,
-    },
+  {
+    id: 'mem_1',
+    type: 'milestone',
+    title: 'First Nebula Link with Luna',
+    description:
+      'The moment when Luna and I discovered our cosmic connection through synchronized star-gazing in the Dreamers Circle. The constellati...',
+    date: new Date('2024-12-15').toISOString(),
+    context: 'Andromeda',
+    participants: ['user_2', 'user_1'],
+    isPrivate: true,
+  },
+  {
+    id: 'mem_2',
+    type: 'moment',
+    title: 'Cosmic Poetry Night',
+    description:
+      "An incredible evening in the Starlight Poets circle where everyone shared verses about their favorite constellations. Nova's poem abo...",
+    date: new Date('2024-12-10').toISOString(),
+    context: 'Lyra',
+    participants: ['user_3', 'user_8', 'user_4', 'user_5'],
+    isPrivate: false,
+  },
+  {
+    id: 'mem_3',
+    type: 'message',
+    title: 'The Great Galaxy Alignment',
+    description:
+      'A beautiful moment when all five of us in the Nebula Wanderers felt the same pull toward exploration at exactly the same time. The...',
+    date: new Date('2024-12-08').toISOString(),
+    context: 'Sagittarius',
+    participants: ['user_4', 'user_8', 'user_3', 'user_1', 'user_2'],
+    isPrivate: true,
+  },
+  {
+    id: 'mem_4',
+    type: 'milestone',
+    title: "Stella's Breakthrough",
+    description:
+      'The day Stella opened up about her fears and dreams in our private Nebula Link. It marked the beginning of our deeper connection and...',
+    date: new Date('2024-12-05').toISOString(),
+    context: 'Virgo',
+    participants: ['user_5', 'user_6'],
+    isPrivate: true,
+  },
 ];
 
 export const AVATAR_COLORS = [
